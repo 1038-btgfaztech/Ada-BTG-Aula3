@@ -15,7 +15,17 @@ namespace Ada_BTG_Aula3
 //• Realizar uma saída no estoque e mostrar novamente os dados do produto.
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Produto produto = new();
+
+            Console.WriteLine("Digite o nome do produto": );
+            produto.nome = Console.ReadLine();
+            Console.WriteLine("Digite o preço do produto": );
+            produto.preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade do produto": );
+            produto.quantidade = int.Parse(Console.ReadLine());
+
+
+
         }
     }
 }

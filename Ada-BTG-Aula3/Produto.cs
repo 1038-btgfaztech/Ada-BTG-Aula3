@@ -12,6 +12,7 @@ namespace Ada_BTG_Aula3
         double preco;
         int quantidade;
 
+
         public double ValorTotalEmEstoque()
         {
             return quantidade * preco;
@@ -20,5 +21,9 @@ namespace Ada_BTG_Aula3
         {
             this.quantidade += quantidade;
         }
-    }
+        public void RemoverProdutos(int quantidade)
+        {
+            this.quantidade -= quantidade;
+        }
+}
 }
